@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.heading_class{
+    height: 4rem;
+    background-color: rgb(11, 11, 31);
+    color: white;
+    line-height:4rem;
+}
+
+.choice{
+    height: 165px;
+    width: 165px;
+    display: flex;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    position: relative; /* Required for absolute positioning of the circle */
+}
+
+.choice:hover{
+    cursor:pointer;
+    background-color:rgb(11, 11, 27);
+}
+
+img{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.choices{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin-top: 5rem;
+}
+
+.score-board{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    margin-top: 3rem;
+    font-size: 2rem;
+
+}
+  
+.msg-container{
+   margin-top: 3rem;
+
+
+}
+/* 
+#msg {
+    background-color: #081b31;
+    color: #fff;
+    font-size: 2rem;
+    display: inline;
+    padding: 1rem;
+    border-radius: 1rem;
+  } */
+
+#msg{
+    background-color: rgb(8, 8, 41);
+    color: beige;
+    font-size: 2rem;
+    display: inline;
+    padding: 1rem;
+    border-radius: 1rem;
+
+  
+}
+
+#reset-button {
+    background-color: rgb(11, 11, 31); /* Same background color as heading */
+    color: white; /* White text for contrast */
+    font-size: 1.5rem; /* Slightly smaller font size */
+    padding: 1rem 2rem; /* Padding for a nice button size */
+    border: none; /* Remove default border */
+    border-radius: 1rem; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth background color change */
+    margin-top: 2rem; /* Margin to separate from other elements */
+}
+
+#reset-button:hover {
+    background-color: rgb(11, 11, 27); /* Darker shade on hover */
+}
+
+
+.circle {
+    position: absolute;
+    height: 180px; /* Adjust size as needed */
+    width: 180px; /* Adjust size as needed */
+    border-radius: 50%; /* Circle shape */
+    border: 5px solid transparent; /* Default border */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Offset to center the circle */
+    transition: border-color 0.3s ease; /* Smooth transition */
+    z-index: -1; /* Behind the image */
+}
